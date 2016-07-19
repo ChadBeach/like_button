@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body ng-app='app'>
     <div class="container">
-      <button ng-click="count = count + 1" ng-init="count=0">
-        Increment
+    <form ng-controller="MainController">
+      <button class="button" ng-click="addToPage()">
+        {{ likes }}
+        Likes
       </button>
+    </form>
       <span>
-        count: {{count}}
+
       </span>
     </div>
     <script src="js/bundle.js"></script>
